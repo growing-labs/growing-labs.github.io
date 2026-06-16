@@ -1,6 +1,9 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://growing-labs.github.io',
-  base: '/',
+  site: 'https://www.growing-labs.com',
+  trailingSlash: 'ignore',
+  build: {
+    assets: 'assets',
+  },
 });
